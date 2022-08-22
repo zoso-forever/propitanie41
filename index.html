@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная - propitanie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css" />
+</head>
+<body class="page page--home">
+    <svg class="svg-filters">
+    <filter id="circle-shadow" x="-200%" y="-200%" width="400%" height="400%">
+        <feOffset xmlns="http://www.w3.org/2000/svg" in="SourceAlpha" result="offOut" dx="0" dy="3" />
+        <feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="offOut" result="blurOut" stdDeviation="2.2" />
+        <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="blurOut" result="opacOut">
+            <feFuncA xmlns="http://www.w3.org/2000/svg" type="table" tableValues="0 0.12" />
+        </feComponentTransfer>
+        <feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="opacOut" mode="normal" />
+    </filter>
+</svg>
+
+    <header class="header js-header">
+    <div class="header__container">
+        <button
+            aria-label="Меню"
+            title="Меню"
+            class="header__guide-toggle js-guide-toggle u-mobile-only"
+            type="button"
+        >
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#menu"
+                ></use>
+            </svg>
+        </button>
+        <a class="header__logo" href="/">
+            <img src="images/logo.svg" alt="Пропитание" />
+        </a>
+        <div class="header__navbar"><div class="menu">
+    <nav class="menu__nav">
+        <a href="/#intro" class="menu__link">Как это работает</a>
+        <a href="/#select-diet" class="menu__link">Выбор питания и&nbsp;цены</a>
+        <a href="/#reviews" class="menu__link">Отзывы</a>
+        <a href="/#faq" class="menu__link">Помощь</a>
+        <a
+            href="/#select-diet"
+            class="menu__button button button--yellow u-desktop-and-up"
+            >Заказать</a
+        >
+    </nav>
+    <ul class="menu__socials u-mobile-only">
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#vk"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#instagram"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#fb"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+    <address class="menu__address">
+        <a class="menu__phone" href="tel:+79060049229">
+            +7 (906) 004-92-29
+        </a>
+        <p class="menu__time menu__text">
+            ежедневно<br />
+            с 9:00 до 18:00
+        </p>
+        <div class="city-select">
+    <button
+        role="combobox"
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        class="city-select__toggle"
+    ></button>
+</div>
+
+    </address>
+</div>
+</div>
+        <a
+            href="/#select-diet"
+            class="header__button button button--yellow u-mobile-only"
+        >
+            Заказать
+        </a>
+    </div>
+</header>
+
+    <div class="guide js-guide u-mobile-only">
+    <div class="guide__inner">
+        <button
+            aria-lable="Закрыть меню"
+            title="Закрыть"
+            class="guide__close js-guide-close"
+        >
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#close"
+                ></use>
+            </svg>
+        </button>
+        <div class="menu">
+    <nav class="menu__nav">
+        <a href="/#intro" class="menu__link">Как это работает</a>
+        <a href="/#select-diet" class="menu__link">Выбор питания и&nbsp;цены</a>
+        <a href="/#reviews" class="menu__link">Отзывы</a>
+        <a href="/#faq" class="menu__link">Помощь</a>
+        <a
+            href="/#select-diet"
+            class="menu__button button button--yellow u-desktop-and-up"
+            >Заказать</a
+        >
+    </nav>
+    <ul class="menu__socials u-mobile-only">
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#vk"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#instagram"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__socials-item">
+            <a
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                href="https://vk.com/"
+            >
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#fb"
+                    ></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+    <address class="menu__address">
+        <a class="menu__phone" href="tel:+79060049229">
+            +7 (906) 004-92-29
+        </a>
+        <p class="menu__time menu__text">
+            ежедневно<br />
+            с 9:00 до 18:00
+        </p>
+        <div class="city-select">
+    <button
+        role="combobox"
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        class="city-select__toggle"
+    ></button>
+</div>
+
+    </address>
+</div>
+
+    </div>
+</div>
+
+    <div class="hero js-hero-carousel">
+    <div class="hero__carousel glide">
+        <div data-glide-el="track" class="glide__track">
+            <ul class="glide__slides">
+                <li class="glide__slide hero__slide hero__slide--appear">
+                    <div class="hero__content">
+                        <h2 class="hero__title">
+                            Больше не нужно
+                            стоять у плиты!
+                        </h2>
+                        <h3 class="hero__supplementary">
+                            Доставим готовую еду на всю неделю
+                            от 550 р в день.
+                        </h3>
+                        <div class="hero__button-wrapper">
+                            <a href="#select-diet" class="button button--green hero__button">
+                                Выбрать рацион
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/hero-image-1.jpg" alt="">
+                </li>
+                <li class="glide__slide hero__slide">
+                    <div class="hero__content">
+                        <h2 class="hero__title">
+                            Больше не нужно
+                            стоять у плиты!
+                        </h2>
+                        <h3 class="hero__supplementary">
+                            Доставим готовую еду на всю неделю
+                            от 550 р в день.
+                        </h3>
+                        <div class="hero__button-wrapper">
+                            <a href="#select-diet" class="button button--yellow hero__button">
+                                Выбрать рацион
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/hero-image-2.jpg" alt="">
+                </li>
+                <li class="glide__slide hero__slide">
+                    <div class="hero__content">
+                        <h2 class="hero__title">
+                            Больше не нужно
+                            стоять у плиты!
+                        </h2>
+                        <h3 class="hero__supplementary">
+                            Доставим готовую еду на всю неделю
+                            от 550 р в день.
+                        </h3>
+                        <div class="hero__button-wrapper">
+                            <a href="#select-diet" class="button button--blue hero__button">
+                                Выбрать рацион
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/hero-image-3.jpg" alt="">
+                </li>
+                <li class="glide__slide hero__slide">
+                    <div class="hero__content">
+                        <h2 class="hero__title">
+                            Больше не нужно
+                            стоять у плиты!
+                        </h2>
+                        <h3 class="hero__supplementary">
+                            Доставим готовую еду на всю неделю
+                            от 550 р в день.
+                        </h3>
+                        <div class="hero__button-wrapper">
+                            <a href="#select-diet" class="button button--red hero__button">
+                                Выбрать рацион
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/hero-image-4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero__pagination">
+        <button type="button" class="hero__pagination-step hero__pagination-step--is-active">1</button>
+        <button type="button" class="hero__pagination-step">2</button>
+        <button type="button" class="hero__pagination-step">3</button>
+        <button type="button" class="hero__pagination-step">4</button>
+    </div>
+    <div class="hero__overlay u-desktop-and-up">
+        <div class="hero__container">
+            <ul class="hero__socials">
+                <li class="hero__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#vk"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="hero__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#instagram"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="hero__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#fb"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="hero__scroll-down js-scroll-down">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#scroll-mouse"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <main class="page__content">
+        <section id="advantages" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">Зачем&nbsp;вам это нужно?</h2>
+        <ul class="advantages">
+            <li class="advantages__item appear-animation">
+                <span class="advantages__icon">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#a-clock"
+                        ></use>
+                    </svg>
+                </span>
+                <div class="advantages__lead">
+                    <h4 class="advantages__title">Экономия времени</h4>
+                    <p class="advantages__description">
+                        Мы привозим готовое питание
+                        прямо на дом, а вы можете
+                        заниматься любимыми делами!
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item appear-animation">
+                <span class="advantages__icon">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#a-price"
+                        ></use>
+                    </svg>
+                </span>
+                <div class="advantages__lead">
+                    <h4 class="advantages__title">Блюда по цене продуктов</h4>
+                    <p class="advantages__description">
+                        Блюда готовят профессиональные
+                        повара по авторскому меню
+                        и европейским стандартам
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item appear-animation">
+                <span class="advantages__icon">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#a-healthy"
+                        ></use>
+                    </svg>
+                </span>
+                <div class="advantages__lead">
+                    <h4 class="advantages__title">Доказанная польза</h4>
+                    <p class="advantages__description">
+                        Нормы калорийности и баланс
+                        БЖУ выверены квалифицированным
+                        диетологом
+                    </p>
+                </div>
+            </li>
+            <li class="advantages__item appear-animation">
+                <span class="advantages__icon">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#a-target"
+                        ></use>
+                    </svg>
+                </span>
+                <div class="advantages__lead">
+                    <h4 class="advantages__title">Достижение целей</h4>
+                    <p class="advantages__description">
+                        Выбирайте рацион, подходящий
+                        именно для ваших целей: питайтесь
+                        вкусно, худейте, поддерживайте
+                        форму или набирайте массу!
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section id="select-diet" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">Выберите свой рацион</h2>
+        <div class="diet-list">
+            <div
+                data-diet='{
+                    "name": "extra-light",
+                    "label": "Экстра-лайт",
+                    "price": 550,
+                    "breakfastPrice": 200
+                }'
+                class="diet-card diet-card--extra-light appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-extra-light"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Экстра лайт</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">600 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            <div class="spinner">
+    <button type="button" data-action="decrement" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#minus"
+            ></use>
+        </svg>
+    </button>
+    <input readonly type="text" value="1" class="spinner__input">
+    <button type="button" data-action="increment" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#plus"
+            ></use>
+        </svg>
+    </button>
+</div>
+
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">550 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--green js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "light",
+                    "label": "Лайт",
+                    "price": 650,
+                    "breakfastPrice": 240
+                }'
+                class="diet-card diet-card--light appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-light"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Лайт</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">1000 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Грамотно питаюсь в течении дня
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            <div class="spinner">
+    <button type="button" data-action="decrement" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#minus"
+            ></use>
+        </svg>
+    </button>
+    <input readonly type="text" value="1" class="spinner__input">
+    <button type="button" data-action="increment" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#plus"
+            ></use>
+        </svg>
+    </button>
+</div>
+
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">650 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--yellow js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "minimum",
+                    "label": "Минимум",
+                    "price": 950,
+                    "breakfastPrice": 280
+                }'
+                class="diet-card diet-card--minimum appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-minimum"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Минимум</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">1500 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            <div class="spinner">
+    <button type="button" data-action="decrement" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#minus"
+            ></use>
+        </svg>
+    </button>
+    <input readonly type="text" value="1" class="spinner__input">
+    <button type="button" data-action="increment" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#plus"
+            ></use>
+        </svg>
+    </button>
+</div>
+
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">950 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--blue js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "energy",
+                    "label": "Заряжаюсь энергией (2000 ккал)",
+                    "price": 1250,
+                    "breakfastPrice": 320
+                }'
+                class="diet-card diet-card--energy appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-energy"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Заряжаюсь энергией (2000 ккал)</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">2000 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            <div class="spinner">
+    <button type="button" data-action="decrement" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#minus"
+            ></use>
+        </svg>
+    </button>
+    <input readonly type="text" value="1" class="spinner__input">
+    <button type="button" data-action="increment" class="spinner__control">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#plus"
+            ></use>
+        </svg>
+    </button>
+</div>
+
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">1250 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--red js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="week-menu" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">
+            Примерное меню на неделю
+        </h2>
+        <div class="week-menu">
+            <div class="week-menu__list js-week-menu-tabs tabs">
+                <div class="tabs__select u-mobile-only appear-animation">
+                    <button type="button" class="tabs__select-toggle">
+                        <span class="tabs__select-label">Продукты</span>
+                        <span class="tabs__select-icon">
+                            <svg>
+                                <use
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="images/icons.svg#arrow-down"
+                                ></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="tabs__select-body">
+                        <div data-tab-index="0" class="tabs__select-option tabs__select-option--is-selected">
+                            Понедельник
+                        </div>
+                        <div data-tab-index="1" class="tabs__select-option">
+                            Вторник
+                        </div>
+                        <div data-tab-index="2" class="tabs__select-option">
+                            Среда
+                        </div>
+                        <div data-tab-index="3" class="tabs__select-option">
+                            Четверг
+                        </div>
+                        <div data-tab-index="4" class="tabs__select-option">
+                            Пятница
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__controls appear-animation">
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="0"
+                    >
+                        Понедельник
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="1"
+                    >
+                        Вторник
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="2"
+                    >
+                        Среда
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="3"
+                    >
+                        Четверг
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="4"
+                    >
+                        Пятница
+                    </button>
+                </div>
+                <div class="tabs__panels appear-animation">
+                    <div class="tabs__panel js-menu-carousel-1">
+                        <div class="menu-carousel">
+    <div class="glide">
+        <div class="u-desktop-and-up" data-glide-el="controls">
+            <button data-glide-dir="<<" type="button" class="menu-carousel__control menu-carousel__control--prev">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+            <button data-glide-dir=">>" type="button" class="menu-carousel__control menu-carousel__control--next">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-carousel__wrapper">
+            <div data-glide-el="track" class="glide__track menu-carousel__track">
+                <ul class="glide__slides menu-carousel__slides">
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>1 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image2.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>2 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image3.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>3 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>4 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-glide-el="controls[nav]" class="menu-carousel__pagination u-mobile-only">
+            <button data-glide-dir="=0" type="button" class="menu-carousel__pagination-step">1</button>
+            <button data-glide-dir="=1" type="button" class="menu-carousel__pagination-step">2</button>
+            <button data-glide-dir="=2" type="button" class="menu-carousel__pagination-step">3</button>
+            <button data-glide-dir="=3" type="button" class="menu-carousel__pagination-step">4</button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-2">
+                        <div class="menu-carousel">
+    <div class="glide">
+        <div class="u-desktop-and-up" data-glide-el="controls">
+            <button data-glide-dir="<<" type="button" class="menu-carousel__control menu-carousel__control--prev">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+            <button data-glide-dir=">>" type="button" class="menu-carousel__control menu-carousel__control--next">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-carousel__wrapper">
+            <div data-glide-el="track" class="glide__track menu-carousel__track">
+                <ul class="glide__slides menu-carousel__slides">
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>1 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image2.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>2 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image3.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>3 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>4 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-glide-el="controls[nav]" class="menu-carousel__pagination u-mobile-only">
+            <button data-glide-dir="=0" type="button" class="menu-carousel__pagination-step">1</button>
+            <button data-glide-dir="=1" type="button" class="menu-carousel__pagination-step">2</button>
+            <button data-glide-dir="=2" type="button" class="menu-carousel__pagination-step">3</button>
+            <button data-glide-dir="=3" type="button" class="menu-carousel__pagination-step">4</button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-3">
+                        <div class="menu-carousel">
+    <div class="glide">
+        <div class="u-desktop-and-up" data-glide-el="controls">
+            <button data-glide-dir="<<" type="button" class="menu-carousel__control menu-carousel__control--prev">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+            <button data-glide-dir=">>" type="button" class="menu-carousel__control menu-carousel__control--next">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-carousel__wrapper">
+            <div data-glide-el="track" class="glide__track menu-carousel__track">
+                <ul class="glide__slides menu-carousel__slides">
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>1 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image2.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>2 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image3.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>3 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>4 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-glide-el="controls[nav]" class="menu-carousel__pagination u-mobile-only">
+            <button data-glide-dir="=0" type="button" class="menu-carousel__pagination-step">1</button>
+            <button data-glide-dir="=1" type="button" class="menu-carousel__pagination-step">2</button>
+            <button data-glide-dir="=2" type="button" class="menu-carousel__pagination-step">3</button>
+            <button data-glide-dir="=3" type="button" class="menu-carousel__pagination-step">4</button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-4">
+                        <div class="menu-carousel">
+    <div class="glide">
+        <div class="u-desktop-and-up" data-glide-el="controls">
+            <button data-glide-dir="<<" type="button" class="menu-carousel__control menu-carousel__control--prev">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+            <button data-glide-dir=">>" type="button" class="menu-carousel__control menu-carousel__control--next">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-carousel__wrapper">
+            <div data-glide-el="track" class="glide__track menu-carousel__track">
+                <ul class="glide__slides menu-carousel__slides">
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>1 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image2.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>2 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image3.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>3 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>4 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-glide-el="controls[nav]" class="menu-carousel__pagination u-mobile-only">
+            <button data-glide-dir="=0" type="button" class="menu-carousel__pagination-step">1</button>
+            <button data-glide-dir="=1" type="button" class="menu-carousel__pagination-step">2</button>
+            <button data-glide-dir="=2" type="button" class="menu-carousel__pagination-step">3</button>
+            <button data-glide-dir="=3" type="button" class="menu-carousel__pagination-step">4</button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-5">
+                        <div class="menu-carousel">
+    <div class="glide">
+        <div class="u-desktop-and-up" data-glide-el="controls">
+            <button data-glide-dir="<<" type="button" class="menu-carousel__control menu-carousel__control--prev">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+            <button data-glide-dir=">>" type="button" class="menu-carousel__control menu-carousel__control--next">
+                <svg>
+                    <use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="images/icons.svg#arrow-right"
+                    ></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-carousel__wrapper">
+            <div data-glide-el="track" class="glide__track menu-carousel__track">
+                <ul class="glide__slides menu-carousel__slides">
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>1 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image2.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>2 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image3.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>3 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide menu-carousel__slide">
+                        <div class="menu-carousel__image">
+                            <img src="images/menu-image1.jpg" alt="">
+                        </div>
+                        <div class="menu-carousel__content">
+                            <h4>4 прием пищи</h4>
+                            <p>Рис карри с запеченной свининой и овощами под соусом терияки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-glide-el="controls[nav]" class="menu-carousel__pagination u-mobile-only">
+            <button data-glide-dir="=0" type="button" class="menu-carousel__pagination-step">1</button>
+            <button data-glide-dir="=1" type="button" class="menu-carousel__pagination-step">2</button>
+            <button data-glide-dir="=2" type="button" class="menu-carousel__pagination-step">3</button>
+            <button data-glide-dir="=3" type="button" class="menu-carousel__pagination-step">4</button>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="week-menu__cards">
+                <article class="week-menu__card week-menu__card--small week-menu__card--accent appear-animation">
+                    <h3 class="week-menu__card-title">
+                        Добавьте к рациону вкусный и полезный завтрак!
+                    </h3>
+                    <div class="week-menu__card-content">
+                        <p>Йогурт с гранолой<br>+ от 100р *</p>
+                    </div>
+                    <div class="week-menu__card-bottom">
+                        <p class="week-menu__card-tip">
+                            Добавить завтрак
+                            и указать количетво
+                            порций вы можете в корзине
+                        </p>
+                        <p class="week-menu__card-tip">
+                            * зависит от выбранного рациона
+                        </p>
+                    </div>
+                </article>
+                <article class="week-menu__card appear-animation">
+                    <h3 class="week-menu__card-title">
+                        Меню на завтра:
+                    </h3>
+                    <div class="week-menu__card-content">
+                        <ol>
+                            <li>Рис с курочкой, ананасом и овощами под соусом свит чили</li>
+                            <li>Макарошки с шампиньонами, курочкой и сливочно-сырным соусом</li>
+                            <li>Салат с кижучем, отварным яйцом и фасолью Романо</li>
+                            <li>Крем-суп из брокколи с сыром Чеддер</li>
+                        </ol>
+                    </div>
+                    <div class="week-menu__card-bottom">
+                        <a href="/#select-diet" class="week-menu__card-cta button button--red">
+                            Заказать
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="intro" class="section">
+    <div class="intro">
+        <div class="section__container">
+            <h2 class="section__title appear-animation">Как это работает</h2>
+            <div class="intro__container">
+                <div class="intro__step appear-animation">
+                    <div class="intro__count">
+                        <svg class="step-number step-number--visible" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13" stroke="#D6E4AF" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle class="step-number__s step-number__s--1" cx="14" cy="14" r="13" />
+                        </svg>
+                        <span class="intro__number">1</span>
+                    </div>
+                    <div class="intro__inner">
+                        <h4 class="intro__title">Выбор рациона</h4>
+                        <p class="intro__lead">
+                            Определяетесь с планом питания
+                            (600, 1000, 1500 или 2000 ккал в день)
+                            и количеством дней (2, 5, 20 дней).
+                            Или заказываете обратный звонок:
+                            мы вам поможем!
+                        </p>
+                    </div>
+                </div>
+                <div class="intro__step appear-animation">
+                    <div class="intro__count">
+                        <svg class="step-number step-number--visible" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13" stroke="#D6E4AF" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle class="step-number__s step-number__s--2" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--1" cx="14" cy="14" r="13" />
+                        </svg>
+                        <span class="intro__number">2</span>
+                    </div>
+                    <div class="intro__inner">
+                        <h4 class="intro__title">Заявка и оплата</h4>
+                        <p class="intro__lead">
+                            Оставляете заявку любым удобным
+                            для вас образом: через сайт, в наших
+                            соцсетях  или мессенджерах.
+                            Оплатить можно онлайн или наличными курьеру при первой доставке заказа.
+                        </p>
+                    </div>
+                </div>
+                <div class="intro__step appear-animation">
+                    <div class="intro__count">
+                        <svg class="step-number step-number--visible" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13" stroke="#D6E4AF" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle class="step-number__s step-number__s--3" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--2" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--1" cx="14" cy="14" r="13" />
+                        </svg>
+                        <span class="intro__number">3</span>
+                    </div>
+                    <div class="intro__inner">
+                        <h4 class="intro__title">Приготовление и&nbsp;доставка</h4>
+                        <p class="intro__lead">
+                            Мы готовим блюда для вас ежедневно
+                            только из свежих продуктов. Доставка
+                            осуществляется на следующий день
+                            после заказа, если вы успели сделать
+                            его до 18:00. Мы доставляем еду каждый
+                            день с 9:30 до 13:30!
+                        </p>
+                    </div>
+                </div>
+                <div class="intro__step appear-animation">
+                    <div class="intro__count">
+                        <svg class="step-number step-number--visible" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13" stroke="#D6E4AF" stroke-linejoin="round"/>
+                            <circle class="step-number__s step-number__s--4" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--3" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--2" cx="14" cy="14" r="13" />
+                            <circle class="step-number__s step-number__s--1" cx="14" cy="14" r="13" />
+                        </svg>
+                        <span class="intro__number">4</span>
+                    </div>
+                    <div class="intro__inner">
+                        <h4 class="intro__title">Питание в&nbsp;удовольствие</h4>
+                        <p class="intro__lead">
+                            В наборе питания будет 4 блюда
+                            или 5, если вы возьмете завтрак.
+                            Вы компонуете блюда так, как вам
+                            нравится, питаетесь вкусно и полезно,
+                            достигая цели без потери времени!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="reviews" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">Что о нас говорят</h2>
+        <div class="reviews">
+            <div class="reviews__carousel glide appear-animation">
+                <div data-glide-el="track" class="glide__track reviews__track">
+                    <ul class="glide__slides reviews__slides">
+                        <li class="glide__slide reviews__slide">
+                            <div class="reviews__slide-inner">
+                                <blockquote class="reviews__quote">
+                                    <footer>
+                                        <a class="reviews__user" href="#">
+                                            <svg class="reviews__icon">
+                                                <use
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="images/icons.svg#instagram"
+                                                ></use>
+                                            </svg>
+                                            @_mmmari
+                                        </a>
+                                    </footer>
+                                    Сегодня ем по-царски! Цель: реже ходить в шамсу и сэкономить кэш Выглядит перспективно
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="glide__slide reviews__slide">
+                            <div class="reviews__slide-inner">
+                                <blockquote class="reviews__quote">
+                                    <footer>
+                                        <a target="_blank" rel="nofollow noopener noreferrer" class="reviews__user" href="https://instagram.com">
+                                            <svg class="reviews__icon">
+                                                <use
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="images/icons.svg#instagram"
+                                                ></use>
+                                            </svg>
+                                            @_mmmari
+                                        </a>
+                                    </footer>
+                                    Когда ты ленивая попа и не хочешь
+                                    готовить еду перед работой) То вот
+                                    мой помощник, чтобы не есть всякие
+                                    вредные булочки
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="glide__slide reviews__slide">
+                            <div class="reviews__slide-inner">
+                                <blockquote class="reviews__quote">
+                                    <footer>
+                                        <a target="_blank" rel="nofollow noopener noreferrer" class="reviews__user" href="https://instagram.com">
+                                            <svg class="reviews__icon">
+                                                <use
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="images/icons.svg#instagram"
+                                                ></use>
+                                            </svg>
+                                            @_mmmari
+                                        </a>
+                                    </footer>
+                                    Когда ты ленивая попа и не хочешь
+                                    готовить еду перед работой) То вот
+                                    мой помощник, чтобы не есть всякие
+                                    вредные булочки
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li class="glide__slide reviews__slide">
+                            <div class="reviews__slide-inner">
+                                <blockquote class="reviews__quote">
+                                    <footer>
+                                        <a target="_blank" rel="nofollow noopener noreferrer" class="reviews__user" href="https://instagram.com">
+                                            <svg class="reviews__icon">
+                                                <use
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="images/icons.svg#instagram"
+                                                ></use>
+                                            </svg>
+                                            @_mmmari
+                                        </a>
+                                    </footer>
+                                    Когда ты ленивая попа и не хочешь
+                                    готовить еду перед работой) То вот
+                                    мой помощник, чтобы не есть всякие
+                                    вредные булочки
+                                </blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div data-glide-el="controls[nav]" class="reviews__pagination u-mobile-only appear-animation">
+                    <button data-glide-dir="=0" type="button" class="reviews__pagination-step">1</button>
+                    <button data-glide-dir="=1" type="button" class="reviews__pagination-step">2</button>
+                    <button data-glide-dir="=2" type="button" class="reviews__pagination-step">3</button>
+                    <button data-glide-dir="=3" type="button" class="reviews__pagination-step">4</button>
+                </div>
+            </div>
+            <h4 class="reviews__supplementary appear-animation">
+                Все отзывы о нас вы можете найти
+                по тегу <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.instagram.com/explore/tags/propitanie41/">#propitanie41</a>
+            </h4>
+        </div>
+    </div>
+</section>
+
+        <section id="founder" class="section">
+    <div class="section__container">
+        <div class="founder">
+            <div class="founder__image appear-animation">
+                <img src="images/sport-woman.webp" alt="Радмила Шамбулина" />
+            </div>
+            <div class="founder__content">
+                <blockquote>
+                    <footer>
+                        <h2 class="founder__title appear-animation">
+                            Основатель "Propitanie41"
+                            <span class="founder__name">Елена Новикова</span>
+                        </h2>
+                    </footer>
+                    <p class="founder__quote appear-animation">
+                        Меня зовут Елена Новикова, и я один из основателей
+                        проекта Propitanie41. Я лично достигаю поставленных
+                        спортивных целей с нашими рационами, присоединяйтесь и
+                        вы!
+                    </p>
+                </blockquote>
+                <div class="founder__cta appear-animation">
+                    <a
+                        href="#select-diet"
+                        class="button button--red founder__button"
+                    >
+                        Выбрать рацион
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="faq" class="section section--faq">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">Частые вопросы</h2>
+        <div class="faq">
+            <div class="faq__list js-faq-tabs tabs">
+                <div class="tabs__select u-mobile-only appear-animation">
+                    <button type="button" class="tabs__select-toggle">
+                        <span class="tabs__select-label">Продукты</span>
+                        <span class="tabs__select-icon">
+                            <svg>
+                                <use
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="images/icons.svg#arrow-down"
+                                ></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="tabs__select-body">
+                        <div data-tab-index="0" class="tabs__select-option tabs__select-option--is-selected">
+                            Продукты
+                        </div>
+                        <div data-tab-index="1" class="tabs__select-option">
+                            Тарифы
+                        </div>
+                        <div data-tab-index="2" class="tabs__select-option">
+                            Оплата и доставка
+                        </div>
+                        <div data-tab-index="3" class="tabs__select-option">
+                            Хранение
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__controls appear-animation">
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="0"
+                    >
+                        Продукты
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="1"
+                    >
+                        Тарифы
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="2"
+                    >
+                        Оплата и доставка
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="3"
+                    >
+                        Хранение
+                    </button>
+                </div>
+                <div class="tabs__panels faq__panels appear-animation">
+                    <div class="tabs__panel">
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel">
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel">
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tabs__panel">
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                        <div class="collapsible">
+    <div class="collapsible__tab">
+        <span class="collapsible__heading">
+            Используете ли вы сахар или сахарозаменитель. Если да, то какой?
+        </span>
+        <span class="collapsible__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <div class="collapsible__body">
+        <div class="collapsible__body-inner">
+            <p>
+                Основной источник белка - куриная грудка, а также для
+                разнообразия мы используем говядину, свинину, рыбу и
+                морепродукты.
+            </p>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__row">
+            <a class="footer__logo" href="/">
+                <img alt="Пропитание" src="images/logo.svg" />
+            </a>
+            <address class="footer__address">
+                <a class="footer__phone" href="tel:+79060049229">
+                    +7 (906) 004-92-29
+                </a>
+                <p class="footer__text footer__time">
+                    ежедневно<br class="u-mobile-only" />
+                    с 9:00 до 18:00
+                </p>
+            </address>
+            <h3
+                class="footer__slogan footer__text footer__text--big u-mobile-only"
+            >
+                Сбалансированное питание с доставкой на дом в
+                Петропавловске-Камчатском
+            </h3>
+            <div class="footer__subscribe">
+                <form class="subscribe js-subscribe-form">
+    <div class="subscribe__inner">
+        <input
+            name="email"
+            required
+            placeholder="Эл. почта"
+            class="subscribe__field"
+            type="email"
+        >
+        <button class="subscribe__submit button button--green" type="submit">
+            Подписаться
+        </button>
+    </div>
+</form>
+
+            </div>
+        </div>
+        <div class="footer__row">
+            <h3
+                class="footer__slogan footer__text footer__text--big u-desktop-and-up"
+            >
+                Сбалансированное питание с доставкой на&nbsp;дом в
+                Петропавловске-Камчатском
+            </h3>
+            <ul class="footer__socials">
+                <li class="footer__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#vk"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#instagram"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        href="https://vk.com/"
+                    >
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#fb"
+                            ></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__banks">
+                <span class="footer__banks-item footer__banks-item--mastercard">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#mastercard"
+                        ></use>
+                    </svg>
+                </span>
+                <span class="footer__banks-item footer__banks-item--visa">
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#visa"
+                        ></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="footer__row">
+            <div class="footer__terms">
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__link"
+                >
+                    Публичная оферта
+                </a>
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__link"
+                >
+                    Согласие на обработку персональных данных
+                </a>
+            </div>
+            <div class="footer__legal">
+                <p class="footer__text">ИП Сергей Романов</p>
+                <p class="footer__text">
+                    ИНН 410000000000 ОГРНИП 310000000000000
+                </p>
+            </div>
+            <div class="footer__copyrights">
+                <p class="footer__text">
+                    © 2017-2020<br />
+                    Propitanie41 — сервис доставки здорового питания
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <a
+    aria-label="Корзина"
+    title="Корзина"
+    href="cart.html"
+    class="cart-button cart-button--empty"
+>
+    <span class="cart-button__icon">
+        <svg>
+            <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="images/icons.svg#cart"
+            ></use>
+        </svg>
+        <span class="cart-button__amount">0</span>
+    </span>
+</a>
+
+    <div class="popup js-subscribe-banner">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <button
+                    aria-label="Закрыть"
+                    title="Закрыть"
+                    type="button"
+                    class="popup__close"
+                >
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#close"
+                        ></use>
+                    </svg>
+                </button>
+                <div class="banner">
+    <div class="banner__image">
+        <img src="images/banner-image.jpg" alt="">
+    </div>
+    <div class="banner__content">
+        <h4 class="banner__title">Не решаетесь заказать?</h4>
+        <p class="banner__lead">
+            Подпишитесь на расылку, и получите бонус на первый заказ
+        </p>
+        <div class="banner__subscribe">
+            <form class="subscribe js-subscribe-form">
+    <div class="subscribe__inner">
+        <input
+            name="email"
+            required
+            placeholder="Эл. почта"
+            class="subscribe__field"
+            type="email"
+        >
+        <button class="subscribe__submit button button--green" type="submit">
+            Подписаться
+        </button>
+    </div>
+</form>
+
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/common.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>
