@@ -1,0 +1,95 @@
+.advantages {
+    @include mq($from: desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @extend %appear-animation;
+
+        font-family: $accent-font-family;
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 5px;
+        transition-delay: .12s, .12s !important;
+
+        @include mq($from: desktop) {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.2;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include mq($from: wide) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__lead {
+        max-width: 100%;
+    }
+
+    &__description {
+        @extend %appear-animation;
+
+        font-size: 12px;
+        line-height: 1.16;
+        transition-delay: .18s, .18s !important;
+
+        @include mq($from: desktop) {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        @include mq($from: wide) {
+            font-size: 18px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        @include mq($until: desktop) {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        @include mq($from: desktop) {
+            flex-direction: column;
+            text-align: center;
+            flex: 0 0 calc(25% - 44px);
+            width: calc(25% - 44px);
+        }
+
+        @include mq($from: wide) {
+            flex: 0 0 calc(25% - 100px);
+            width: calc(25% - 100px);
+        }
+    }
+
+    &__icon {
+        @extend %appear-animation;
+
+        display: block;
+        margin-right: 10px;
+        width: 54px;
+        height: 62px;
+        flex: 0 0 54px;
+        fill: none;
+
+        @include mq($from: desktop) {
+            margin-right: 0;
+            margin-bottom: 10px;
+            height: 102px;
+            width: 89px;
+            flex: 0 0 auto;
+        }
+    }
+}

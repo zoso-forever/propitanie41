@@ -1,0 +1,262 @@
+.hero {
+    $duration: 1.05s;
+    $delay: .2s;
+
+    position: relative;
+    margin-bottom: 40px;
+
+    @include mq($from: desktop) {
+        margin-bottom: 80px;
+    }
+
+    &__slides {
+        backface-visibility: visible !important;
+    }
+
+    &__slide {
+        position: relative;
+        height: 100vh !important;
+        min-height: 420px;
+
+        img {
+            @include square($size: 100%);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            object-fit: cover;
+            object-position: 50% 50%;
+            user-select: none;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        display: flex;
+        align-items: center;
+
+        @include mq($from: desktop) {
+            bottom: 45px;
+        }
+    }
+
+    &__pagination-step {
+        @include clear-button-defaults();
+
+        position: relative;
+        display: block;
+        overflow: visible;
+        font-size: 12px;
+        text-align: center;
+        color: $color-gray1;
+        width: 8px;
+        transition: color .3s;
+
+        @include mq($until: desktop) {
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+
+        @include mq($from: desktop) {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: $accent-font-family;
+            width: 36px;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            &::after {
+                height: 4px !important;
+                border-radius: 2px;
+                bottom: -8px !important;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            height: 2px;
+            left: 0;
+            width: 100%;
+            background-color: $color-black;
+            transform: scaleX(0);
+            will-change: transform;
+            transition: transform .4s $ease-out-quart;
+        }
+
+        &:hover {
+            color: $color-black;
+        }
+    }
+
+    &__pagination-step--is-active {
+        color: $color-black;
+
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+
+        @include mq($from: desktop) {
+            max-width: 545px;
+            top: calc(#{$header-height-desktop} + 15%);
+            left: calc((100vw - #{$container-w-sm}) / 2);
+            transform: none;
+            text-align: left;
+            padding: 0;
+        }
+
+        @include mq($from: wide) {
+            top: calc(#{$header-height-wide} + 15%);
+            left: calc((100vw - #{$container-w-md}) / 2);
+            max-width: 625px;
+        }
+    }
+
+    &__button-wrapper {
+        transform: translateY(45px) rotateY(20deg) rotateX(14deg) translateZ(0);
+        transition:
+            opacity $duration $ease-out-quint $delay + .16s,
+            transform $duration $ease-out-quint $delay + .16s;
+        opacity: 0;
+
+        .hero__slide--appear & {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 1.1;
+        font-weight: 700;
+        font-family: $accent-font-family;
+        margin-bottom: 18px;
+        transform: translateY(45px) rotateY(20deg) rotateX(14deg) translateZ(0);
+        opacity: 0;
+        transition:
+            opacity $duration $ease-out-quint $delay,
+            transform $duration $ease-out-quint $delay;
+
+        @include mq($from: desktop) {
+            font-size: 54px;
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 62px;
+            line-height: 1.09;
+            margin-bottom: 35px;
+        }
+
+        .hero__slide--appear & {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+
+    &__supplementary {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.31;
+        margin-bottom: 30px;
+        transform: translateY(45px) rotateY(20deg) rotateX(14deg) translateZ(0);
+        transition:
+            opacity $duration $ease-out-quint $delay + .08s,
+            transform $duration $ease-out-quint $delay + .08s;
+        opacity: 0;
+
+        @include mq($from: desktop) {
+            font-size: 20px;
+            margin-bottom: 50px;
+            max-width: 400px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 24px;
+            max-width: 480px;
+            margin-bottom: 40px;
+        }
+
+        .hero__slide--appear & {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: calc(#{$header-height-desktop} + 15%);
+        bottom: 45px;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+
+        @include mq($from: wide) {
+            top: calc(#{$header-height-wide} + 12%);
+        }
+    }
+
+    &__container {
+        @extend %container;
+
+        position: relative;
+        height: 100%;
+    }
+
+    &__scroll-down {
+        @include clear-button-defaults();
+
+        width: 24px;
+        height: 38px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: auto;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: auto;
+    }
+
+    &__socials-item {
+        height: 40px;
+        width: 38px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

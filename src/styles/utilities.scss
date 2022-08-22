@@ -1,0 +1,16 @@
+.u-mobile-only {
+    @include mq($from: desktop) {
+        display: none !important;
+    }
+}
+
+.u-desktop-and-up {
+    @include mq($until: desktop) {
+        display: none !important;
+    }
+}
+
+.u-lock-scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,81 @@
+<div class="cart-product">
+    <div class="cart-product__heading">
+        <h4 class="cart-product__title">
+            {{ index + 1 }}. Рацион "{{ product.label }}"
+        </h4>
+        <button
+            type="button"
+            @click="removeProduct(index)"
+            class="cart-product__remove"
+        >
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#close"
+                ></use>
+            </svg>
+        </button>
+    </div>
+    <div class="cart-product__row">
+        <div class="cart-product__label">Количество рационов</div>
+        <div class="cart-product__amount">
+            <div class="spinner">
+                <button
+                    @click="updateAmount(-1)"
+                    type="button"
+                    class="spinner__control"
+                >
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#minus"
+                        ></use>
+                    </svg>
+                </button>
+                <input
+                    v-model="product.amount"
+                    readonly
+                    type="text"
+                    class="spinner__input"
+                />
+                <button
+                    @click="updateAmount(1)"
+                    type="button"
+                    class="spinner__control"
+                >
+                    <svg>
+                        <use
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="images/icons.svg#plus"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="cart-product__price">
+            {{ price | toCurrency }}
+        </div>
+    </div>
+    <div class="cart-product__row">
+        <div class="cart-product__column">
+            <div class="cart-product__label">Добавить завтрак?</div>
+            <label class="checkbox cart-product__checkbox">
+                <input
+                    class="checkbox__input"
+                    v-model="product.includeBreakfast"
+                    type="checkbox"
+                />
+                <span class="checkbox__frame"></span>
+                <span class="checkbox__label">
+                    Да (+{{ product.breakfastPrice }} руб/день)
+                </span>
+            </label>
+        </div>
+        <div v-if="product.includeBreakfast" class="cart-product__subtle">
+            {{ product.amount }} * {{ product.breakfastPrice | toCurrency }}
+        </div>
+        <div v-if="product.includeBreakfast" class="cart-product__price">
+            {{ breakfastPrice | toCurrency }}
+        </div>
+    </div>
+</div>

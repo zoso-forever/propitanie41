@@ -1,0 +1,118 @@
+.city-select {
+    @include mq($from: desktop) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-family: $accent-font-family;
+        text-align: center;
+
+        @include mq($from: desktop) {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__body {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+        border-radius: 36px;
+        width: 290px;
+        padding: 20px 0;
+        top: 0;
+        z-index: 1000;
+        opacity: 0;
+        display: none;
+        transform: translateY(15px);
+        transition: opacity .25s, transform .3s $ease-out-cubic;
+        pointer-events: none;
+
+        @include mq($from: desktop) {
+            padding: 32px 0;
+            width: 365px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+        }
+
+        &.is-active {
+            opacity: 1;
+            transform: translateZ(0);
+            pointer-events: auto;
+        }
+    }
+
+    &__lead {
+        font-size: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+
+        @include mq($from: desktop) {
+            font-size: 12px;
+            margin-bottom: 13px;
+        }
+    }
+
+    &__selected {
+        margin-bottom: 9px;
+    }
+
+    &__selected,
+    &__option {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+
+        @include mq($from: desktop) {
+            font-size: 16px;
+        }
+    }
+
+    &__option {
+        padding: 7px 20px;
+        transition: background-color .1s;
+        cursor: pointer;
+
+        @include mq($from: desktop) {
+            padding: 10px 20px;
+        }
+
+        &:hover {
+            background-color: lighten($color: $color-green, $amount: 8);
+        }
+
+        &--is-selected {
+            display: none;
+        }
+    }
+
+    &__toggle {
+        $color: lighten($color: $color-green, $amount: 20);
+
+        @include clear-button-defaults();
+
+        padding-bottom: 4px;
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        color: $color-gray1;
+        background-image:
+            linear-gradient(
+                to right,
+                $color,
+                $color 6px,
+                transparent 6px,
+                transparent
+            );
+        background-repeat: repeat-x;
+        background-size: 9px 2px;
+        background-position: 0 100%;
+
+        @include mq($from: desktop) {
+            text-align: right;
+        }
+    }
+}

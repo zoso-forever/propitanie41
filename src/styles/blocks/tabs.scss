@@ -1,0 +1,159 @@
+.tabs {
+    &__controls {
+        @extend %appear-animation;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 45px;
+
+        @include mq($until: desktop) {
+            display: none;
+        }
+    }
+
+    &__panels {
+        @extend %appear-animation;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__select {
+        @extend %appear-animation;
+
+        position: relative;
+        margin-bottom: 20px;
+        z-index: 2;
+    }
+
+    &__select-toggle {
+        @include clear-button-defaults();
+
+        padding: 12px 16px;
+        font-size: 16px;
+        font-family: $accent-font-family;
+        font-weight: 600;
+        color: $color-black;
+        background-color: $color-yellow;
+        width: 100%;
+        display: block;
+        position: relative;
+        border-radius: 39px;
+        z-index: 10;
+    }
+
+    &__select-label {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 45px;
+    }
+
+    &__select-icon {
+        @include square($size: 15px);
+
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        display: block;
+        transition: transform .35s $ease-out-cubic;
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+        backface-visibility: hidden;
+    }
+
+    &__select--is-active &__select-icon {
+        transform: translateY(-50%) rotate(-180deg);
+    }
+
+    &__select-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 55px;
+        padding-bottom: 15px;
+        background-color: $color-white;
+        z-index: 9;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+        border-radius: 31px;
+        overflow: hidden;
+        transition: opacity .3s, visibility .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__select--is-active &__select-body {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__select-option {
+        padding: 6px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color: $color-yellow, $amount: 15);
+        }
+
+        &--is-selected {
+            display: none;
+        }
+    }
+
+    &__select--is-active &__icon {
+        transform: rotate(180deg);
+    }
+
+    &__control {
+        @include clear-button-defaults();
+
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $accent-font-family;
+        color: $color-gray1;
+        position: relative;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-black;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            /* stylelint-disable-next-line */
+            height: 4px;
+            left: -5px;
+            right: -5px;
+            background-color: $color-green;
+            transform: scaleX(0);
+            border-radius: 2px;
+            will-change: transform;
+            transition: transform .5s $ease-out-quart;
+        }
+
+        &--is-active {
+            color: $color-black;
+
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+    }
+
+    &__panel {
+        display: none;
+
+        &--is-active {
+            display: block;
+        }
+    }
+}

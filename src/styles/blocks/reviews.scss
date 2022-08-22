@@ -1,0 +1,131 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+
+    &__slides {
+        backface-visibility: visible !important;
+        overflow: visible !important;
+    }
+
+    &__slide {
+        border-radius: 36px;
+        box-shadow: 0 2px 10px rgba(32, 32, 32, .1);
+        min-height: 145px;
+        height: auto !important;
+
+        footer {
+            margin-bottom: 5px;
+
+            @include mq($from: wide) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__carousel {
+        @extend %appear-animation;
+
+        @include mq($from: desktop) {
+            order: 2;
+        }
+    }
+
+    &__quote {
+        font-size: 12px;
+        line-height: 1.2;
+
+        @include mq($from: wide) {
+            font-size: 18px;
+        }
+    }
+
+    &__icon {
+        width: 30px;
+        height: 32px;
+        margin-right: 10px;
+
+        @include mq($from: wide) {
+            margin-right: 20px;
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: $color-black;
+
+        @include mq($from: wide) {
+            font-size: 12px;
+        }
+    }
+
+    &__slide-inner {
+        padding: 25px 16px;
+
+        @include mq($from: wide) {
+            padding: 32px 32px 45px;
+        }
+    }
+
+    &__track {
+        overflow: visible !important;
+    }
+
+    &__pagination {
+        @extend %appear-animation;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__pagination-step {
+        @include square($size: 10px);
+        @include clear-button-defaults();
+
+        border-radius: 50%;
+        border: 1px solid $color-green;
+        display: block;
+        font-size: 0;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &--is-active {
+            background-color: $color-green;
+        }
+    }
+
+    &__supplementary {
+        @extend %appear-animation;
+
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.15;
+        font-family: $accent-font-family;
+
+        @include mq($from: desktop) {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        @include mq($from: wide) {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: inherit;
+            transition: opacity .3s;
+
+            &:hover {
+                opacity: .65;
+            }
+        }
+    }
+}

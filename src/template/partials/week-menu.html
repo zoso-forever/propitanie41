@@ -1,0 +1,133 @@
+<section id="week-menu" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">
+            Примерное меню на неделю
+        </h2>
+        <div class="week-menu">
+            <div class="week-menu__list js-week-menu-tabs tabs">
+                <div class="tabs__select u-mobile-only appear-animation">
+                    <button type="button" class="tabs__select-toggle">
+                        <span class="tabs__select-label">Продукты</span>
+                        <span class="tabs__select-icon">
+                            <svg>
+                                <use
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="images/icons.svg#arrow-down"
+                                ></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="tabs__select-body">
+                        <div data-tab-index="0" class="tabs__select-option tabs__select-option--is-selected">
+                            Понедельник
+                        </div>
+                        <div data-tab-index="1" class="tabs__select-option">
+                            Вторник
+                        </div>
+                        <div data-tab-index="2" class="tabs__select-option">
+                            Среда
+                        </div>
+                        <div data-tab-index="3" class="tabs__select-option">
+                            Четверг
+                        </div>
+                        <div data-tab-index="4" class="tabs__select-option">
+                            Пятница
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__controls appear-animation">
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="0"
+                    >
+                        Понедельник
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="1"
+                    >
+                        Вторник
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="2"
+                    >
+                        Среда
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="3"
+                    >
+                        Четверг
+                    </button>
+                    <button
+                        type="button"
+                        class="tabs__control"
+                        data-tab-index="4"
+                    >
+                        Пятница
+                    </button>
+                </div>
+                <div class="tabs__panels appear-animation">
+                    <div class="tabs__panel js-menu-carousel-1">
+                        @@include('./menu-carousel.html')
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-2">
+                        @@include('./menu-carousel.html')
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-3">
+                        @@include('./menu-carousel.html')
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-4">
+                        @@include('./menu-carousel.html')
+                    </div>
+                    <div class="tabs__panel js-menu-carousel-5">
+                        @@include('./menu-carousel.html')
+                    </div>
+                </div>
+            </div>
+            <div class="week-menu__cards">
+                <article class="week-menu__card week-menu__card--small week-menu__card--accent appear-animation">
+                    <h3 class="week-menu__card-title">
+                        Добавьте к рациону вкусный и полезный завтрак!
+                    </h3>
+                    <div class="week-menu__card-content">
+                        <p>Йогурт с гранолой<br>+ от 100р *</p>
+                    </div>
+                    <div class="week-menu__card-bottom">
+                        <p class="week-menu__card-tip">
+                            Добавить завтрак
+                            и указать количетво
+                            порций вы можете в корзине
+                        </p>
+                        <p class="week-menu__card-tip">
+                            * зависит от выбранного рациона
+                        </p>
+                    </div>
+                </article>
+                <article class="week-menu__card appear-animation">
+                    <h3 class="week-menu__card-title">
+                        Меню на завтра:
+                    </h3>
+                    <div class="week-menu__card-content">
+                        <ol>
+                            <li>Рис с курочкой, ананасом и овощами под соусом свит чили</li>
+                            <li>Макарошки с шампиньонами, курочкой и сливочно-сырным соусом</li>
+                            <li>Салат с кижучем, отварным яйцом и фасолью Романо</li>
+                            <li>Крем-суп из брокколи с сыром Чеддер</li>
+                        </ol>
+                    </div>
+                    <div class="week-menu__card-bottom">
+                        <a href="/#select-diet" class="week-menu__card-cta button button--red">
+                            Заказать
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

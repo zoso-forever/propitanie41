@@ -1,0 +1,19 @@
+.faq {
+    @include mq($from: wide) {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 430px;
+            height: 652px;
+            right: 0;
+            top: -310px;
+            background: url('../images/background-dish.png') no-repeat 50% 50% / cover;
+        }
+    }
+
+    &__panels {
+        max-width: 865px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

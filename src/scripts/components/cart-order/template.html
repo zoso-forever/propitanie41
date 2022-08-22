@@ -1,0 +1,148 @@
+<div class="cart-order">
+    <form novalidate @submit.prevent="submitOrder">
+        <fieldset class="cart-order__fieldset">
+            <div class="cart-order__row">
+                <base-textbox
+                    v-model="userData.name"
+                    required
+                    ref="firstInput"
+                    name="name"
+                    type="text"
+                    :show-error="$v.userData.name.$invalid && submitStatus === SUBMIT_STATUS_ERROR"
+                    error-message="Укажите ваше имя"
+                    :readonly="submitStatus === SUBMIT_STATUS_PENDING"
+                    placeholder="Фамилия, имя и отчество"
+                />
+            </div>
+            <div class="cart-order__row">
+                <base-textbox
+                    v-model="userData.phone"
+                    @blur="onPhoneBlur"
+                    @focus="onPhoneFocus"
+                    v-mask="'+7 (###) ###-##-##'"
+                    name="phone"
+                    required
+                    :type="iOS ? 'text' : 'tel'"
+                    :show-error="$v.userData.phone.$invalid && submitStatus === SUBMIT_STATUS_ERROR"
+                    error-message="Укажите номер телефона"
+                    :readonly="submitStatus === SUBMIT_STATUS_PENDING"
+                    placeholder="Номер телефона"
+                />
+            </div>
+        </fieldset>
+        <fieldset class="cart-order__fieldset">
+            <legend>Адрес доставки</legend>
+            <div class="cart-order__row">
+                <base-select
+                    v-model="userData.city"
+                    :options="cityOptions"
+                    name="city"
+                    placeholder="Город"
+                    @input="onCityChanged"
+                    :disabled="submitStatus === SUBMIT_STATUS_PENDING"
+                />
+            </div>
+            <div class="cart-order__row">
+                <base-select
+                    v-model="userData.street"
+                    :options="streetOptions"
+                    :searchable="true"
+                    name="city"
+                    placeholder="Улица"
+                    label-key="value"
+                    @input="onStreetChanged"
+                    @on-search-query-change="onStreetSearchQueryChange"
+                    :disabled="submitStatus === SUBMIT_STATUS_PENDING || !userData.city"
+                />
+            </div>
+            <div class="cart-order__address cart-order__row">
+                <div
+                    class="cart-order__address-col cart-order__address-col--building"
+                >
+                    <base-select
+                        v-model="userData.building"
+                        :options="buildingOptions"
+                        :searchable="true"
+                        name="building"
+                        placeholder="Дом"
+                        label-key="value"
+                        @on-search-query-change="onBuildingSearchQueryChange"
+                        :disabled="!userData.city || !userData.street || submitStatus === SUBMIT_STATUS_PENDING"
+                    />
+                </div>
+                <div
+                    class="cart-order__address-col cart-order__address-col--entrance"
+                >
+                    <base-textbox
+                        v-model="userData.entrance"
+                        name="entrance"
+                        type="text"
+                        :small="true"
+                        :readonly="submitStatus === SUBMIT_STATUS_PENDING"
+                        placeholder="Подъезд"
+                        :show-error="$v.userData.entrance.$invalid && submitStatus === SUBMIT_STATUS_ERROR"
+                        error-message="Не более 10 знаков"
+                    />
+                </div>
+                <div
+                    class="cart-order__address-col cart-order__address-col--appartment"
+                >
+                    <base-textbox
+                        v-model="userData.appartment"
+                        name="appartment"
+                        type="text"
+                        :small="true"
+                        :readonly="submitStatus === SUBMIT_STATUS_PENDING"
+                        placeholder="Квартира/Офис"
+                    />
+                </div>
+            </div>
+            <div class="cart-order__row">
+                <base-textbox
+                    v-model="userData.note"
+                    component="textarea"
+                    rows="4"
+                    name="note"
+                    :readonly="submitStatus === SUBMIT_STATUS_PENDING"
+                    placeholder="Комментарий"
+                />
+            </div>
+        </fieldset>
+        <fieldset class="cart-order__fieldset">
+            <legend>Способ доставки</legend>
+            <div class="cart-order__row">
+                <base-select
+                    v-model="userData.delivery"
+                    :options="deliveryOptions"
+                />
+            </div>
+        </fieldset>
+        <div
+            role="alert"
+            aria-atomic="true"
+            class="cart-order__errors"
+            v-if="errors"
+        >
+            <p class="cart-order__error-message">
+                Please enter your email address.
+            </p>
+        </div>
+        <div class="cart-order__controls">
+            <button
+                @click="backToCart"
+                type="button"
+                class="button button--green cart-order__button"
+                :disabled="submitStatus === SUBMIT_STATUS_PENDING"
+            >
+                Назад
+            </button>
+            <button
+                type="submit"
+                class="button button--green cart-order__button"
+                :disabled="submitStatus === SUBMIT_STATUS_PENDING"
+            >
+                Отправить
+            </button>
+        </div>
+    </form>
+</div>

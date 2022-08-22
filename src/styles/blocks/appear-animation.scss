@@ -1,0 +1,16 @@
+%appear-animation {
+    $duration: .82s;
+
+    transform: translateY(45px) translateZ(0);
+    opacity: 0;
+    transition:
+        opacity $duration,
+        transform $duration $ease-out-cubic;
+    transition-delay: .06s, .06s;
+
+    .appear-animation--is-visible &,
+    &.appear-animation--is-visible {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}

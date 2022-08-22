@@ -1,0 +1,68 @@
+<div :class="selectClasses">
+    <div class="select__wrapper">
+        <button
+            v-if="!searchable"
+            class="select__toggle"
+            :disabled="disabled"
+            type="button"
+            @click="toggle"
+        >
+            <span v-if="!proxyValue" class="select__placeholder">
+                {{ placeholder }}
+            </span>
+            <span v-if="proxyValue" class="select__selected">
+                <slot v-bind="bindOption(proxyValue)" name="selected-option">
+                    {{ getOptionValue(proxyValue) }}
+                </slot>
+            </span>
+        </button>
+        <input
+            v-if="searchable"
+            :placeholder="placeholder"
+            :value="searchQuery"
+            class="select__search-input"
+            type="text"
+            role="combobox"
+            spellcheck="false"
+            autocomplete="off"
+            aria-label="Поиск выбора"
+            @input="onSearchQueryChange"
+            @focus="toggle"
+            :name="name"
+            :disabled="disabled"
+        />
+        <span v-if="!searchable" class="select__arrow">
+            <svg>
+                <use
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="images/icons.svg#arrow-down"
+                ></use>
+            </svg>
+        </span>
+    </div>
+    <portal to="select-list">
+        <!-- <transition name="dropdown"> -->
+        <div
+            v-if="isOpen && filteredOptions.length"
+            class="select__body"
+            :style="listPosition"
+        >
+            <ul class="select__list">
+                <li
+                    v-for="(option, index) in filteredOptions"
+                    :key="index"
+                    class="select__option"
+                    :class="{
+                            'select__option--highlighted': highlightedIndex === index
+                        }"
+                    @click="select(option)"
+                >
+                    <slot v-bind="bindOption(option)" name="option">
+                        {{ getOptionValue(option) }}
+                    </slot>
+                </li>
+            </ul>
+        </div>
+        <!-- </transition> -->
+    </portal>
+</div>

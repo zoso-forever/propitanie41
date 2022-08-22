@@ -1,0 +1,54 @@
+.banner {
+    &__image {
+        height: 325px;
+
+        @include mq($from: desktop) {
+            height: 415px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    &__content {
+        padding: 20px 20px 30px;
+        text-align: center;
+
+        @include mq($from: desktop) {
+            padding: 40px 32px 50px;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+        font-family: $accent-font-family;
+        font-weight: 600;
+
+        @include mq($from: desktop) {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__lead {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        @include mq($from: desktop) {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__subscribe {
+        max-width: 465px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

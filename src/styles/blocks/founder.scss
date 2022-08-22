@@ -1,0 +1,123 @@
+.founder {
+    @include mq($until: desktop) {
+        position: relative;
+        padding-top: 93px;
+        background-color: $color-white;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+        border-radius: 36px;
+    }
+
+    @include mq($from: desktop) {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        @extend %appear-animation;
+
+        font-size: 12px;
+        color: $color-black;
+        font-weight: 600;
+        text-align: center;
+
+        @include mq($until: desktop) {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            right: 0;
+        }
+
+        @include mq($from: desktop) {
+            font-size: 18px;
+            font-family: $accent-font-family;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        display: block;
+        margin-top: 7px;
+        font-family: $accent-font-family;
+
+        @include mq($from: desktop) {
+            font-size: 30px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 36px;
+        }
+    }
+
+    &__image {
+        @extend %appear-animation;
+
+        margin-bottom: 25px;
+
+        @include mq($from: desktop) {
+            margin-bottom: 0;
+            border-radius: 36px;
+            flex: 0 0 48.9%;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+
+        @include mq($from: wide) {
+            flex-basis: 46.5%;
+            margin-right: 48px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+
+    &__content {
+        padding: 0 39px 35px;
+
+        @include mq($from: desktop) {
+            padding: 0;
+            padding-right: 60px;
+            flex: 1 1 auto;
+        }
+
+        @include mq($from: wide) {
+            padding-right: 45px;
+        }
+
+        blockquote {
+            font-size: 12px;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            text-align: center;
+
+            @include mq($from: desktop) {
+                font-size: 14px;
+                margin-bottom: 50px;
+                text-align: left;
+            }
+
+            @include mq($from: wide) {
+                font-size: 24px;
+                margin-bottom: 60px;
+                line-height: 1.3;
+            }
+        }
+    }
+
+    &__quote {
+        @extend %appear-animation;
+    }
+
+    &__cta {
+        @extend %appear-animation;
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+    }
+}

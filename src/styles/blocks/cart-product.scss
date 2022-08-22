@@ -1,0 +1,133 @@
+.cart-product {
+    margin-bottom: 20px;
+
+    @include mq($from: desktop) {
+        margin-bottom: 40px;
+    }
+
+    &__amount {
+        margin-right: 7px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+
+        @include mq($from: wide) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+
+        @include mq($from: desktop) {
+            font-size: 16px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__checkbox {
+        margin-top: 5px;
+
+        @include mq($from: desktop) {
+            margin-top: 10px;
+        }
+
+        @include mq($from: wide) {
+            margin-top: 15px;
+        }
+    }
+
+    &__price {
+        width: 6ch;
+        flex: 0 0 6ch;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: right;
+        white-space: nowrap;
+
+        @include mq($from: desktop) {
+            font-size: 16px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__label {
+        font-size: 12px;
+
+        @include mq($from: desktop) {
+            font-size: 14px;
+        }
+
+        @include mq($from: wide) {
+            font-size: 18px;
+        }
+    }
+
+    &__subtle {
+        font-size: 10px;
+
+        @include mq($from: desktop) {
+            font-size: 12px;
+        }
+    }
+
+    &__remove {
+        @include clear-button-defaults();
+        @include square($size: 8px);
+
+        position: relative;
+        margin-left: 15px;
+        color: $color-red;
+        transition: opacity .3s;
+
+        @include mq($from: desktop) {
+            @include square($size: 14px);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            left: -10px;
+        }
+
+        &:hover {
+            opacity: .65;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+
+        @include mq($from: desktop) {
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-bottom: 15px;
+        }
+
+        @include mq($from: wide) {
+            margin-bottom: 18px;
+            padding-right: 50px;
+        }
+    }
+}

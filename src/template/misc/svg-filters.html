@@ -1,0 +1,10 @@
+<svg class="svg-filters">
+    <filter id="circle-shadow" x="-200%" y="-200%" width="400%" height="400%">
+        <feOffset xmlns="http://www.w3.org/2000/svg" in="SourceAlpha" result="offOut" dx="0" dy="3" />
+        <feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="offOut" result="blurOut" stdDeviation="2.2" />
+        <feComponentTransfer xmlns="http://www.w3.org/2000/svg" in="blurOut" result="opacOut">
+            <feFuncA xmlns="http://www.w3.org/2000/svg" type="table" tableValues="0 0.12" />
+        </feComponentTransfer>
+        <feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="opacOut" mode="normal" />
+    </filter>
+</svg>

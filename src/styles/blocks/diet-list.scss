@@ -1,0 +1,5 @@
+.diet-list {
+    @include mq($from: desktop) {
+        display: flex;
+    }
+}

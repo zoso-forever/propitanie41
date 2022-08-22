@@ -1,0 +1,131 @@
+.cart-order {
+    @include mq($from: desktop) {
+        max-width: 445px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mq($from: wide) {
+        max-width: 550px;
+    }
+
+    &__row {
+        margin-bottom: 20px;
+
+        @include mq($from: desktop) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__fieldset {
+        margin-bottom: 25px;
+
+        @include mq($from: desktop) {
+            margin-bottom: 30px;
+        }
+
+        legend {
+            font-size: 14px;
+            font-weight: 500;
+            color: $color-black;
+            margin-bottom: 10px;
+
+            @include mq($from: desktop) {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            @include mq($from: wide) {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include mq($from: desktop) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__address-col {
+        flex: 1 1;
+    }
+
+    &__address-col--building {
+        flex: 0 0 calc(50% - 5px);
+        // max-width: 100px;
+        margin-right: 10px;
+
+        @include mq($from: desktop) {
+            flex: 1 0 calc(33.3333% - 10px);
+            margin-right: 5px;
+        }
+    }
+
+    &__address-col--entrance {
+        flex-basis: calc(50% - 5px);
+
+        @include mq($from: desktop) {
+            margin-right: 5px;
+            flex: 1 0 calc(33.3333% - 10px);
+        }
+    }
+
+    &__address-col--appartment {
+        flex: 1 0 100%;
+        margin-top: 20px;
+
+        @include mq($from: desktop) {
+            flex: 1 0 calc(33.3333% - 10px);
+            margin-top: 0;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        min-width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        flex: 1 1 auto;
+
+        @include mq($from: desktop) {
+            font-size: 24px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 15px;
+
+            @include mq($from: desktop) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__errors {
+        margin-bottom: 20px;
+    }
+
+    &__error-message {
+        color: $color-red;
+        font-size: 10px;
+
+        @include mq($from: desktop) {
+            font-size: 12px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$fonts: (
+    (
+        'name': $base-font-family-name,
+        'weights': (
+            400,
+            500,
+            600,
+            700
+        )
+    ),
+    (
+        'name': $accent-font-family-name,
+        'weights': (
+            500,
+            600,
+            700
+        )
+    )
+);
+
+@each $font in $fonts {
+    @each $weight in map-get($map: $font, $key: 'weights') {
+        @font-face {
+            /* stylelint-disable-next-line */
+            $font-name: map-get($map: $font, $key: 'name');
+            $path: '../fonts/#{$font-name}_#{$weight}';
+
+            font-family: $font-name;
+            src:
+                url('#{$path}.woff2') format('woff2'),
+                url('#{$path}.woff') format('woff');
+            /* stylelint-disable-next-line */
+            font-display: swap;
+            font-weight: $weight;
+            font-style: normal;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+<section id="select-diet" class="section">
+    <div class="section__container">
+        <h2 class="section__title appear-animation">Выберите свой рацион</h2>
+        <div class="diet-list">
+            <div
+                data-diet='{
+                    "name": "extra-light",
+                    "label": "Экстра-лайт",
+                    "price": 550,
+                    "breakfastPrice": 200
+                }'
+                class="diet-card diet-card--extra-light appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-extra-light"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Экстра лайт</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">600 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            @@include('./spinner.html')
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">550 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--green js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "light",
+                    "label": "Лайт",
+                    "price": 650,
+                    "breakfastPrice": 240
+                }'
+                class="diet-card diet-card--light appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-light"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Лайт</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">1000 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Грамотно питаюсь в течении дня
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            @@include('./spinner.html')
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">650 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--yellow js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "minimum",
+                    "label": "Минимум",
+                    "price": 950,
+                    "breakfastPrice": 280
+                }'
+                class="diet-card diet-card--minimum appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-minimum"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Минимум</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">1500 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            @@include('./spinner.html')
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">950 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--blue js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                data-diet='{
+                    "name": "energy",
+                    "label": "Заряжаюсь энергией (2000 ккал)",
+                    "price": 1250,
+                    "breakfastPrice": 320
+                }'
+                class="diet-card diet-card--energy appear-animation"
+            >
+                <div class="diet-card__header">
+                    <span class="diet-card__icon">
+                        <svg>
+                            <use
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="images/icons.svg#d-energy"
+                            ></use>
+                        </svg>
+                    </span>
+                    <h4 class="diet-card__title">Заряжаюсь энергией (2000 ккал)</h4>
+                    <span class="diet-card__circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 84">
+                            <path d="M343 0v26H241.603c-9.12 31.246-37.161 54-70.34 54s-61.221-22.754-70.34-54H0V0h343z" fill-rule="evenodd" filter="url(#circle-shadow)"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="diet-card__inner">
+                    <p class="diet-card__calory">2000 ккал</p>
+                    <p class="diet-card__composition">
+                        Б: 50 | Ж: 25 | У: 40
+                    </p>
+                    <p class="diet-card__supplementary">
+                        Хочу больших изменений
+                    </p>
+                    <div class="diet-card__controls">
+                        <div class="diet-card__amount">
+                            @@include('./spinner.html')
+                            <span class="diet-card__tip">
+                                Выберите количество дней
+                            </span>
+                        </div>
+                        <div class="diet-card__price">1250 р</div>
+                        <button
+                            type="button"
+                            class="diet-card__button button button--red js-add-to-cart"
+                        >
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
